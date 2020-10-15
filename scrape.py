@@ -22,7 +22,7 @@ def scrape(keyword: str, page_count: int, search_type: str = 'video'):
     """
 
     # Check parameter types
-    if type(keyword) != int:
+    if type(keyword) != str:
         raise ValueError("keyword must be a string")
     if type(page_count) != int:
         raise ValueError("page_count must be an integer")
